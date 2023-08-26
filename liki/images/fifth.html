@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Student Registration</title>
+<style>
+ form {
+ font-family: Sans-serif; 
+ font-size: 24px;     
+ font-style: normal; 
+ font-weight: bold; 
+ color: #ff0015;
+ text-decoration: center; 
+ 
+}
+table{
+width: 300pt;
+height: 300pt;
+ border: 10px solid #106560;
+}
+ input [type="text"],[type="number"],[type="email"],[type="password"],[type="text"],
+ [type="date"]
+ {
+    width: 100%;
+    align-items:center;
+border: 2px solid #ff0015;
+ }
+ 
+ textarea{
+    width: 100%;
+    border: 2px solid #ff0015;
+
+ }
+ select{
+    width: 100%;
+    border: 2px solid #ff0015;
+
+ }
+input [type="file"]{
+    border: 1px solid black;
+}
+button[type="submit"]{
+    background-color: #f3166b;
+    color: #ffffff;
+}
+button[type="submit"]:hover{
+    background-color: #f3166b;
+}
+button[type="submit"]{
+    background-color: #f3166b;
+}
+</style>
+</head>
+<body>
+    <form>
+
+<table align="center" cellpadding = "5" >
+  <tr><td  align="center"style="color: crimson;"><b>STUDENT REGISTRATION FORM</b></td>
+  </tr> 
+   <!--------------------- First Name ------------------------------------------>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" maxlength="50" placeholder="Enter first name"required/>
+</td>
+</tr>
+<!------------------------ Last Name --------------------------------------->
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName" maxlength="50" placeholder=" Enter Last  name" required/>
+</td>
+</tr>
+<!-------------------------- Email ID ------------------------------------->
+<tr>
+<td>Gender</td>
+    <td>
+        <input type="radio" name="Gender" value="Male" />
+        Male
+        <input type="radio" name="Gender" value="Female" />
+        Female
+</td>
+<tr>
+    <td>Age</td>
+    <td><input type="number" name="Age" value="name"></td>
+</tr>
+<tr>
+    <td>Date of birth</td>
+    <td><input type="date"></td>
+</tr>
+
+<td>Email Address</td>
+<td><input type="email" name="EmailID" maxlength="100" placeholder="Enter your email"required/></td>
+</tr>
+<!-------------------------- Mobile Number ------------------------------------->
+<tr>
+    <td>Password</td>
+    <td><input type="password" name="pw"id="pw"required></td>
+</tr>
+<tr>
+    <td> Confirm Password</td>
+    <td><input type="password" name="pw"id="pw"required></td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td>
+<input type="text" name="MobileNumber" maxlength="10" placeholder="Enter your phone number"required/>
+</td>
+</tr>
+<tr>
+    <td>Address</td>
+    <td><textarea name="Address" rows="10" cols="50"required></textarea></td>
+</tr>
+<tr>
+    <td>State<br><br></td>
+    <td><select id="country-state" name="country-state" required>
+            <option value="">Select state</option>
+            <option value="AN">Andaman and Nicobar Islands</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="AR">Arunachal Pradesh</option>
+            <option value="AS">Assam</option>
+            <option value="BR">Bihar</option>
+            <option value="CH">Chandigarh</option>
+            <option value="CT">Chhattisgarh</option>
+            <option value="DN">Dadra and Nagar Haveli</option>
+            <option value="DD">Daman and Diu</option>
+            <option value="DL">Delhi</option>
+            <option value="GA">Goa</option>
+            <option value="GJ">Gujarat</option>
+            <option value="HR">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="JK">Jammu and Kashmir</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+            <option value="MZ">Mizoram</option>
+            <option value="NL">Nagaland</option>
+            <option value="OR">Odisha</option>
+            <option value="PY">Puducherry</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="SK">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TG">Telangana</option>
+            <option value="TR">Tripura</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="UT">Uttarakhand</option>
+            <option value="WB">West Bengal</option>
+            </select><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Pincode</label><br><br></td>
+                <td><input type="number" name="" id="" placeholder="Enter your pincode" required><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Hobbies</label><br><br></td>
+                <td><input type="checkbox" value=""><label for="">Music&nbsp;&nbsp;</label><input type="checkbox"
+                        value=""><label for="">Movies&nbsp;&nbsp;</label><input type="checkbox" value=""><label
+                        for="">Sports&nbsp;&nbsp;</label><input type="checkbox" value=""><label
+                        for="">Travel</label><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Upload Photo</label><br><br></td>
+                <td><input type="file" name="" id=""><br><br></td>
+            </tr>
+       <td> <input type="checkbox" name="" id="">I hereby declare that the above information provided is true and correct.</td><br><br>
+      <tr>
+       <td align="center"><button type="submit" class="registerbtn">Register</button></td>
+        <td align="center"><button type="submit" class="reset">Reset</button></td></tr>
+      </tr>
+    </table>
+</form>
+</body>
+
+</html>

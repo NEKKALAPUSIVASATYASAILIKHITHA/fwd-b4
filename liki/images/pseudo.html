@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pseudo-class Selector Practice</title>
+<style>
+/* Add your CSS rules here */
+nav ul li{
+    background-color: aliceblue;
+}
+nav ul li a:visited{
+    color:green;
+    font-style: italic;
+}
+nav ul li a:hover{
+    color:brown;
+}
+h2:hover{
+    background-color: blueviolet;
+}
+.links a:last-child{
+    color: brown;
+}
+nav ul li a:nth-child(odd){
+    background-color: greenyellow;
+}
+.paragraphs p:nth-child(3){
+    color: yellow;
+}
+section p::first-letter{
+    color: orange;
+    text-size-adjust: 5px;
+}
+header h1::first-line{
+    font-style: italic;
+}
+header, nav::before{
+    text-decoration: overline;
+}
+nav ul li::marker{
+    content: '*';
+}
+.paragraphs p::first-line{
+    color:red;
+}
+header,nav::before{
+    content:'welcome';
+}
+h2,nav:after{
+    content
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to the Pseudo-class Selector Practice</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<main>
+<section>
+<h2>About Us</h2>
+<p>We are a web development company...</p>
+</section>
+<section>
+<h2>Our Services</h2>
+<ul>
+<li>Web Design</li>
+<li>Front-end Development</li>
+<li>Back-end Development</li>
+</ul>
+</section>
+</main>
+<div id="additional-info">
+<div class="paragraphs">
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>
+</div>
+<div class="links">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+</div>
+</div>
+<footer>
+<p>&copy; 2023 Pseudo-class Selector Practice</p>
+</footer></body></html>
